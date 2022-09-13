@@ -31,7 +31,9 @@ document.querySelector(".check-btn").addEventListener("click", () => {
 
     if (score >= topScore) {
     //   topScore = score
+    //? LocalStorage'de topScore adıyla bir degisken güncelle.
     localStorage.setItem("topScore",score);
+    //? DOM-daki topScore degerini güncelle.
     document.querySelector(".top-score").textContent = score;
     }
     document.querySelector(".secret-number").textContent = randomNumber;
