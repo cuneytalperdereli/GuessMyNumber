@@ -14,6 +14,7 @@ let score = 10;
 
 //? LocalStorage'de topScore adıyla bir degisken olusturur.
 let topScore = localStorage.getItem("topScore") || 0;
+//? DOM-daki top-score degerini LocalStorageden okuyarak guncelle.
 document.querySelector(".top-score").textContent = topScore;
 
 //* CheckBtn basıldığında kontrolleri yap.
