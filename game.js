@@ -69,16 +69,12 @@ document.querySelector(".again-btn").addEventListener("click",()=>{
     document.querySelector("body").classList.remove("bg-success","bg-danger")
     document.querySelector(".guess-input").value = "";
 })
+document.querySelector(".guess-input").addEventListener('keydown',(e) => {
+    if(e.code === "Enter"){
+        document.querySelector(".check-btn").click();
+    }
 
-
-//! LOCAL STORAGE - SESSION STORAGE
-myObj = {a:1,b:2,c:3}
-
-localStorage.setItem("OBJ",JSON.stringify(myObj));
-
-const redObj = localStorage.getItem("OBJ")
-const readObj = JSON.parse(localStorage.getItem("OBJ"));
-console.log(readObj);
+})
 
 
 
@@ -88,6 +84,9 @@ console.log(readObj);
 
 
 
+
+
+//* ******************  PSEUDO************************************
 
 
 //? Eger input girilmediyse alert()
